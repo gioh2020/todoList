@@ -1,0 +1,16 @@
+<div class="card mt-5">
+    <div class="card-header bg-dark text-white" style="height: 50px; font-size: 1.5rem"  >
+      Tareas
+    </div>
+    <div class="card-body">
+      
+        <ul class="list-group">
+            <li *ngFor="let tarea of arregloTareas " class="list-group-item">{{tarea}}</li>
+        </ul>
+
+      <app-hijo
+      (eventoEnviarData)="agregarAlarregloTareas($event) "
+      ></app-hijo>
+      
+    </div>
+</div>
