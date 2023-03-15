@@ -15,6 +15,10 @@ export class PadreComponent {
     this.arregloTareas.push(valor)
   }
 
+  eliminarTarea(tarea:string) {
+    this.arregloTareas = this.arregloTareas?.filter(elementos => elementos !== tarea)
+  }
+
 
 
 

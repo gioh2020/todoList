@@ -5,7 +5,7 @@
     <div class="card-body">
       
         <ul class="list-group">
-            <li *ngFor="let tarea of arregloTareas " class="list-group-item">{{tarea}}</li>
+            <li *ngFor="let tarea of arregloTareas; index as i "class="list-group-item"> <h2>{{tarea}}</h2> <button (click)="eliminarTarea(tarea)" class="btn btn-danger">Delete</button></li>
         </ul>
 
       <app-hijo
